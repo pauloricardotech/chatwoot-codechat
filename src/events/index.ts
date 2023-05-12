@@ -33,7 +33,7 @@ export const eventChatWoot = async (body: any) => {
   console.log(`🎉 Evento recebido de ${chatId}`, body);
 
   if (chatId === '123456' && body.message_type === 'outgoing') {
-    const command = messageReceived.replace("/", "");
+    const command = messageReceived.replace("#", "");
 
     if (command === "iniciar") {
       try {
